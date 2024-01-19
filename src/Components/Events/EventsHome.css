@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.main{
+  background-color: rgb(247, 146, 112);
+  border-radius: 10px;
+  /* --------------------------------------- */
+  /* display: flex;
+  background: #000;
+  min-height: 100vh; */
+  /* align-items: center;
+  justify-content: center; */
+  width: 80vw;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+.btn{
+  padding: .6rem 1.5rem;
+  background: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn a{
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+@media screen and(min-width: 1240px) {
+  .container{
+      width: 80% !important;
+      margin: auto !important;
+  }
+
+  .section{
+      padding: 6rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body{
+      zoom: 1.7;
+  }
+}
+.btn:hover{
+  background: hsl(187, 85%, 43%);;
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+.main {
+  width: 100%;
+  padding: 70px 20px 20px 20px;
+}
+.main .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  /* background: hsl(240, 4%, 36%); */
+  margin: 1rem 0;
+  z-index: 2;
+}
+
+.secTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .secTitle .title::after {
+  position: absolute;
+  content: "";
+  background: hsl(187, 85%, 43%);;
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.event_name{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.event_address{
+  font-weight: 400;
+}
+.desc p{
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.main .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  padding: 1rem;
+  margin: 15px;
+  border-radius: 10px;
+  align-items: center;
+  background: rgb(225, 225, 225);;
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .secContent .singleDestination:hover {
+  color: hsl(55, 92%, 50%);
+  color: white;
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+  .cardInfo {
+    color: wheat;
+  }
+  .cardInfo .continent .icon{
+    color: wheat;
+  }
+}
+/* .main .secContent .singleDestination:hover {
+  background: hsl(159, 66%, 55%);
+  color: rgb(222, 30, 30);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+} */
+/* .singleDestination:hover{
+  background-color: aqua;
+} */
+
+.main .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: 2s ease;
+}
+
+.main .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.main .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.main .secContent .singleDestination .cardInfo .destTitle {
+  color: rgb(240, 240, 246);;
+  font-size: 1.25rem;
+}
+.main .secContent .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .continent .icon {
+  color: hsl(240, 4%, 36%);;
+  font-size: 18px;
+}
+.main .secContent .singleDestination .cardInfo .continent .name {
+  color: hsl(240, 4%, 36%);;
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .secContent .singleDestination .cardInfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: black;
+  border-top: 1.5px solid rgb(190, 190, 190);;
+  border-bottom: 1.5px solid rgb(190, 190, 190);;
+}
+.main .secContent .singleDestination .cardInfo .fees .grade {
+  color: hsl(240, 4%, 36%);;
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .main .secContent .singleDestination .cardInfo .fees .grade small {
+  text-align: center;
+  background: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  border-radius: 1rem;
+  color: hsl(0, 0%, 100%);
+  padding: 1px 10px;
+  font-size: 10px;
+} */
+/* .main .secContent .singleDestination .cardInfo .fees .price {
+  font-size: 2rem;
+  color: rgb(240, 240, 246);;
+} */
+.main .secContent .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: hsl(240, 4%, 36%);;
+  font-weight: 500;
+}
+.main .secContent .singleDestination .cardInfo .btn {
+  margin-top: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 25px;
+}
+
+.event_name{
+  font-size: large;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
+
+/* -------------------------------------------------- */
+
